@@ -4,9 +4,15 @@
 git clone https://github.com/big-data-europe/docker-hive.git
 
 ## Start docker-compose
+
 sudo docker-compose up -d
 
+## Stop docker-compose
+
+sudo docker-compose down --rmi all
+
 ## SSH to container
+
 sudo docker exec -it docker-hive_hive-server_1 /bin/bash
 
 # Hive with docker-compose
@@ -20,14 +26,13 @@ sudo docker exec -it docker-hive_hive-server_1 /bin/bash
 show databases;
 
 ## Run Hive script 
+
 hive -f SEMX_MCD-KOL_MST_CUSTOMER.sql
 
-## Create TB with ksdev_semX_mcd
-
-hive -e "Drop TABLE IF EXISTS KOL_MST_CUSTOMER";
-
 ## Show detial of table
+
 describe kol_mst_customer;
 
 ## Delete table
+
 hive -e "Drop TABLE IF EXISTS KOL_MST_CUSTOMER";
