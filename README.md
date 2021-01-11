@@ -1,7 +1,7 @@
 # consent
 
 ### parent script
-  python wrapperWriter.py --> python registryXML.py & python generateData.py
+  python wrapperWriter.py --> python registryXML.py + python generateData.py
   
 ### child script
   python registryXML.py --> python configXML.py
