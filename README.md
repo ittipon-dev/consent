@@ -3,11 +3,11 @@
 ### parent script
   python wrapperWriter.py
   
-#### child script
+### child script
   python registryXML.py --> python configXML.py
   
   python generateData.py
  
-##### children script
+#### children script
 
   python configXML.py
